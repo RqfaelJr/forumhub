@@ -1,4 +1,4 @@
-package junior.rafael.forumhub.infra.security;
+package junior.rafael.forumhub.infra.exception;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;

@@ -1,5 +1,6 @@
 package junior.rafael.forumhub.controller;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import junior.rafael.forumhub.domain.autor.AutorRepository;
 import junior.rafael.forumhub.domain.curso.CursoRepository;
@@ -15,6 +16,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping("/topicos")
+@SecurityRequirement(name = "bearer-key")
 public class TopicosController {
 
     @Autowired
